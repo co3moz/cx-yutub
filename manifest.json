@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "cx-yutub",
+  "description": "Youtube downloader extension",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch?v=*"],
+      "js": ["yutub.js"]
+    }
+  ],
+  "permissions": [
+    "webRequest",
+    "*://*.youtube.com/watch?v=*",
+    "webRequestBlocking"
+  ]
+}
